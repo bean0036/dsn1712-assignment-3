@@ -63,6 +63,7 @@ h1 {
     align-items: flex-start;
     max-width: 100%;
     padding: 20px;
+    align-items:center;
 }
 
 #about-me h2 {
@@ -71,7 +72,6 @@ h1 {
 
 #about-me img {
     align-items: end;
-    /* max-width: 5px; */
 }
 
 #services .wrapper {
@@ -114,17 +114,6 @@ h1 {
     margin-top: auto;
 }
 
-/* .grid a:link, .grid a:visited {
-    display: inline-block;
-    padding: .8em 1em;
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-    border: 2px solid #000;
-    border-radius: 4px;
-    margin-top: auto;  
-} */
-
 .btn:hover:hover, .btn:hover:hover:focus {
     background-color: #fff;
     color: #000;
@@ -133,12 +122,14 @@ h1 {
 
 #work {
     text-align: center;
-    /* max-width: 100%; */
-    display: grid;
+}
 
+#work .grid {
+    display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 0;
+    padding: 40px;
 
     grid-template-areas: 
     "div1 div1 div1 div2 div2 div2"
@@ -161,22 +152,22 @@ h1 {
 }
 
 .grid img:nth-child(2) {
-    /* grid-area: div2; */
+    grid-area: div2;
     width: 100%;
 }
 
 .grid img:nth-child(3) {
-    /* grid-area: div3; */
+    grid-area: div3;
     width: 100%;
 }
 
 .grid img:nth-child(4) {
-    /* grid-area: div4; */
+    grid-area: div4;
     width: 100%;
 }
 
 .grid img:nth-child(5) {
-    /* grid-area: div5; */
+    grid-area: div5;
     width: 100%;
 }
 
