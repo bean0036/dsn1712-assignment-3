@@ -1,12 +1,39 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
 header {
     background-color: #000;
     color: #fff;
-    display: flex;
 }
 
 .wrapper {
     max-width: 940px;
-    text-align: center;
+    margin: 0 auto;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-end;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
 }
 
 #hero {
@@ -14,6 +41,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px;
+
     background-image: url(../images/hands-typing.jpg);
     background-size: cover;
     background-position: center center;
@@ -22,10 +51,10 @@ header {
 
 h1 {
     max-width: 60%;
-    background-color: #000;
-    filter: opacity(50%);
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
-    text-shadow: #000;
+    text-shadow: -2px 2px 1px black;
+    text-align: center;
 }
 
 #about-me .wrapper {
@@ -42,28 +71,19 @@ h1 {
 
 #about-me img {
     align-items: end;
+    /* max-width: 5px; */
 }
 
 #services .wrapper {
     background-color: #fafafa;
-    max-width: 100%;
-}
-
-#services {
-    background-color: #fafafa;
     padding: 30px;
-    max-width: 940px;
 }
 
 #services h2 {
-    text-align: center;
     font-size: 2.5rem;
     margin-top: 0;
-}
-
-#services h3 {
-    font-size: 1.5rem;
-    margin: 0;
+    text-align: center;
+    padding: 2.5rem;
 }
 
 #services div:nth-child(2) {
@@ -72,17 +92,9 @@ h1 {
     gap: 20px;
 }
 
-#services article {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background: white;
-}
-
-.btn {
-    padding: 10px 15px;
-    background-color: black;
-    color: white;
+#services h3 {
+    font-size: 1.5rem;
+    margin: 0;
 }
 
 .grid article {
@@ -92,7 +104,17 @@ h1 {
     padding: 20px;
 }
 
-.grid a:link, .grid a:visited {
+.btn {
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+/* .grid a:link, .grid a:visited {
     display: inline-block;
     padding: .8em 1em;
     background-color: #000;
@@ -101,15 +123,17 @@ h1 {
     border: 2px solid #000;
     border-radius: 4px;
     margin-top: auto;
-}
+    
+} */
 
-.grid a:hover, .grid a:focus {
+.btn:hover:hover, .btn:hover:hover:focus {
     background-color: #fff;
     color: #000;
 }
 
 #work {
     text-align: center;
+    max-width: 100%;
 }
 
 #work h2 {
@@ -117,12 +141,10 @@ h1 {
 }
 
 #work .grid {
-    max-width: 940px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 0;
-    justify-content: center;
 
     grid-template-areas: 
         "div1 div1 div1 div2 div2 div2"
@@ -130,24 +152,29 @@ h1 {
     ;
 }
 
-#work .grid .img:nth-child(1) {
+.grid img:nth-child(1) {
     grid-area: div1;
+    width: 100%;
 }
 
-#work .grid .img:nth-child(2) {
+.grid img:nth-child(2) {
     grid-area: div2;
+    width: 100%;
 }
 
-#work .grid .img:nth-child(3) {
+.grid img:nth-child(3) {
     grid-area: div3;
+    width: 100%;
 }
 
-#work .grid .img:nth-child(4) {
+.grid img:nth-child(4) {
     grid-area: div4;
+    width: 100%;
 }
 
-#work .grid .img:nth-child(5) {
+.grid img:nth-child(5) {
     grid-area: div5;
+    width: 100%;
 }
 
 footer {
