@@ -1,0 +1,157 @@
+header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+}
+
+.wrapper {
+    max-width: 940px;
+    text-align: center;
+}
+
+#hero {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/hands-typing.jpg);
+    background-size: cover;
+    background-position: center center;
+    filter: grayscale(70%);
+}
+
+h1 {
+    max-width: 60%;
+    background-color: #000;
+    filter: opacity(50%);
+    color: #fff;
+    text-shadow: #000;
+}
+
+#about-me .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 100%;
+    padding: 20px;
+}
+
+#about-me h2 {
+    font-size: 2rem;
+}
+
+#about-me img {
+    align-items: end;
+}
+
+#services .wrapper {
+    background-color: #fafafa;
+    max-width: 100%;
+}
+
+#services {
+    background-color: #fafafa;
+    padding: 30px;
+    max-width: 940px;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 0;
+}
+
+#services h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#services div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+#services article {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: white;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+}
+
+.grid article {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.grid a:link, .grid a:visited {
+    display: inline-block;
+    padding: .8em 1em;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 4px;
+    margin-top: auto;
+}
+
+.grid a:hover, .grid a:focus {
+    background-color: #fff;
+    color: #000;
+}
+
+#work {
+    text-align: center;
+}
+
+#work h2 {
+    font-size: 2.5rem;
+}
+
+#work .grid {
+    max-width: 940px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+    justify-content: center;
+
+    grid-template-areas: 
+        "div1 div1 div1 div2 div2 div2"
+        "div3 div3 div4 div4 div5 div5"
+    ;
+}
+
+#work .grid .img:nth-child(1) {
+    grid-area: div1;
+}
+
+#work .grid .img:nth-child(2) {
+    grid-area: div2;
+}
+
+#work .grid .img:nth-child(3) {
+    grid-area: div3;
+}
+
+#work .grid .img:nth-child(4) {
+    grid-area: div4;
+}
+
+#work .grid .img:nth-child(5) {
+    grid-area: div5;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
